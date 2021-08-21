@@ -1,0 +1,26 @@
+.main {
+	@apply relative h-screen w-screen flex items-center justify-center;
+
+	& .github {
+		@apply absolute top-16 right-32;
+
+		& svg {
+			@apply w-7 h-7;
+
+			& path {
+				@apply fill-current text-gray-100 opacity-70 transition-all duration-300;
+			}
+		}
+
+		/* TODO: Use this with group hover */
+		&:hover {
+			& svg path {
+				@apply opacity-100;
+			}
+		}
+	}
+
+	& .title {
+		@apply text-6xl text-center font-bold text-white filter drop-shadow-lg;
+	}
+}
