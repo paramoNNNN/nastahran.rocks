@@ -4,6 +4,10 @@
 
 @layer base {
 	body {
-		@apply w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-400 to-purple-900 via-purple-500 animate-gradient-x;
+		@apply w-full h-screen flex items-center justify-center bg-gradient-to-br from-blue-400 to-purple-900 via-purple-500 animate-gradient-x;
+	}
+
+	#__next {
+		@apply flex flex-col w-full h-full max-w-[1600px];
 	}
 }
