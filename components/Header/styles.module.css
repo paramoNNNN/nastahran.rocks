@@ -1,0 +1,20 @@
+.header {
+	@apply flex justify-end py-6 sm:py-8 md:py-10 lg:py-14 px-6 sm:px-10 md:px-14 lg:px-20;
+
+	& .github {
+		& svg {
+			@apply w-7 h-7;
+
+			& path {
+				@apply fill-current text-gray-100 opacity-70 transition-all duration-300;
+			}
+		}
+
+		/* TODO: Use this with group hover */
+		&:hover {
+			& svg path {
+				@apply opacity-100;
+			}
+		}
+	}
+}
