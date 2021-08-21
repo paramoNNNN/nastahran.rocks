@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"prepare": "husky install",
-		"dev": "next dev & tcm -w pages -p '**.module.css'",
+		"dev": "next dev & tcm -w . -p '**.module.css'",
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
