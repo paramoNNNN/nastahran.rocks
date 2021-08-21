@@ -1,0 +1,7 @@
+.main {
+	@apply h-screen flex items-center justify-center;
+
+	& .title {
+		@apply text-6xl text-center font-bold text-white filter drop-shadow-lg;
+	}
+}

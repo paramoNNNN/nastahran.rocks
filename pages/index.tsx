@@ -1,6 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
+import styles from "./styles.module.css";
+
 const Home: NextPage = () => {
 	return (
 		<div>
@@ -10,8 +12,8 @@ const Home: NextPage = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<main className="h-screen flex items-center justify-center">
-				<p className="text-6xl text-center font-bold">Nastahran Rocks</p>
+			<main className={styles.main}>
+				<p className={styles.title}>Nastahran Rocks</p>
 			</main>
 		</div>
 	);
