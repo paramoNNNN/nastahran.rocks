@@ -3,10 +3,12 @@
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
+		"prepare": "husky install",
 		"dev": "next dev & tcm -w pages -p '**.module.css'",
 		"build": "next build",
 		"start": "next start",
-		"lint": "next lint"
+		"lint": "next lint",
+		"type-check": "tsc --project tsconfig.json --pretty --noEmit"
 	},
 	"dependencies": {
 		"next": "11.1.0",
@@ -26,5 +28,10 @@
 		"tailwindcss": "^2.2.7",
 		"typed-css-modules": "^0.7.0",
 		"typescript": "4.3.5"
+	},
+	"lint-staged": {
+		"*.{js,jsx,ts,tsx}": [
+			"eslint --fix"
+		]
 	}
 }
