@@ -3,6 +3,7 @@
 	@apply w-full h-[calc(100%-140px)] sm:h-[calc(100%-180px)] md:h-[calc(100%-220px)] lg:h-[calc(100%-280px)];
 
 	& .title {
-		@apply text-4xl md:text-5xl lg:text-6xl text-center font-bold text-white filter drop-shadow-lg;
+		@apply text-4xl md:text-5xl lg:text-6xl text-center font-bold text-white;
+		text-shadow: 0 4px 3px rgb(0 0 0 / 0.07), 0 2px 2px rgb(0 0 0 / 0.06);
 	}
 }
