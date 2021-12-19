@@ -1,12 +1,11 @@
 import { createElement } from "react";
-
 import Github from "assets/icons/github.svg";
 
 export const icons = {
 	Github,
 };
 
-export type TIcon = keyof typeof icons;
+export type Icon = keyof typeof icons;
 
 interface Props {
 	/** icon custom class name */
@@ -14,7 +13,7 @@ interface Props {
 	/** will fire if click action triggered */
 	onClick?: () => void;
 	/** name of the icon */
-	name: TIcon;
+	name: Icon;
 }
 
 const Icon = ({ className, onClick, name }: Props): JSX.Element => {
